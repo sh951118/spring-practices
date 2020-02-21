@@ -9,6 +9,5 @@
 	<modules>
 		<module>hellospring</module>
 		<module>emaillist03</module>
-		<module>guestbook3</module>
 	</modules>
 </project>
