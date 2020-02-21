@@ -19,6 +19,12 @@ public class BoardController {
 	public String write() {
 		return "BoardController:write";
 	}
+	
+	/*
+	 * @RequestMapping("/board/view/{no}")
+	 * URL에 쿼리 스트링 대신 URL 패스로 풀어 쓰는 방식
+	 * 예) /board/view?no=10 -> /board/view/10
+	 */
 	@ResponseBody
 	@RequestMapping("/board/view/{no}")
 	public String view(@PathVariable("no") Long no) {
