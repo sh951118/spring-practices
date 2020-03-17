@@ -2,6 +2,8 @@ package com.douzone.guestbook.controller;
 
 import java.util.List;
 
+import javax.annotation.Resource;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -16,6 +18,7 @@ import com.douzone.guestbook.vo.GuestbookVo;
 @Controller
 public class GuestbookController {
 
+	@Resource
 	@Autowired
 	private GuestbookRepository guestbookRepository;
 		
