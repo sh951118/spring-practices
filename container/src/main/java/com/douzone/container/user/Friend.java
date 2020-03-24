@@ -1,7 +1,6 @@
 package com.douzone.container.user;
 
 public class Friend {
-
 	private String name;
 	
 	public Friend(String name) {
@@ -12,5 +11,4 @@ public class Friend {
 	public String toString() {
 		return "Friend [name=" + name + "]";
 	}
-	
 }

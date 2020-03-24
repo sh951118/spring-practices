@@ -9,9 +9,8 @@ import com.douzone.container.user.User;
 import config.user.AppConfig01;
 
 public class JavaConfig {
-
 	public static void main(String[] args) {
-		//testJavaConfig01();
+		// testJavaConfig01();
 		testJavaConfig02();
 	}
 	
@@ -26,10 +25,10 @@ public class JavaConfig {
 		
 		((ConfigurableApplicationContext)appContext).close();
 	}
-	
-	// Java Config02
-	// 직접 자바 설정 클래스가 있는 베이스 패키지 전달
-	// 설정 클래스에 @Configuration이 반드시 필요하다.
+
+	// Java Connfig02
+	// 직접 자바 설정 클래스가 있는 베이스 패키지 전달	
+	// 설정 클래스에 @Configuration가 반드시 필요하다.
 	public static void testJavaConfig02() {
 		ApplicationContext appContext = new AnnotationConfigApplicationContext("config.user");
 		
